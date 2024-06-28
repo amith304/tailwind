@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(180deg, #6420FF 0%, #5114DD 100%);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-white-100">
+
+    <div class="absolute w-[344px] h-[133px] left-[27px] top-[553px] rounded-t-lg gradient-bg p-4 shadow-lg">
+        <h2 class="text-white text-lg font-semibold mb-2">City, State or Zip</h2>
+        <div class="relative">
+            <input type="text" placeholder="0675" class="w-full py-2 px-3 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <a href="#" class="absolute top-1/2 right-10 transform -translate-y-1/2 text-sm text-blue-500 hover:text-blue-700 underline">Clear</a>
+            <button class="absolute top-1/2 right-2 transform -translate-y-1/2 text-white">
+                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13.5" cy="13.5" r="13.5" fill="#5315E0"/>
+                    <path d="M13.2399 15.2492C13.4087 15.0306 13.3683 14.7166 13.1498 14.5478C12.9312 14.3791 12.6172 14.4195 12.4484 14.638L13.2399 15.2492ZM11.2155 16.2348C11.0467 16.4534 11.0871 16.7674 11.3057 16.9362C11.5242 17.1049 11.8382 17.0646 12.007 16.846L11.2155 16.2348ZM10.6131 15.1481C10.3937 14.9804 10.0799 15.0223 9.91221 15.2417C9.74451 15.4611 9.78641 15.7749 10.0058 15.9426L10.6131 15.1481ZM12.7087 18.0087C12.9281 18.1764 13.2419 18.1345 13.4096 17.9151C13.5773 17.6957 13.5354 17.3819 13.316 17.2142L12.7087 18.0087ZM9.90989 20.5858L10.3056 20.8914L9.90989 20.5858ZM8.22055 19.2945L7.82479 18.9889L8.22055 19.2945ZM8.41629 20.7806L8.11264 21.1778L8.41629 20.7806ZM18.6909 13.7573C17.3753 15.4612 14.9188 15.7822 13.2051 14.4722L12.5978 15.2667C14.7478 16.9102 17.8297 16.5089 19.4824 14.3685L18.6909 13.7573ZM13.2051 14.4722C11.4929 13.1634 11.1721 10.7232 12.4866 9.02085L11.6951 8.4097C10.0412 10.5517 10.4463 13.6221 12.5978 15.2667L13.2051 14.4722ZM12.4866 9.02085C13.8022 7.317 16.2587 6.99602 17.9724 8.30597L18.5797 7.5115C16.4297 5.86803 13.3478 6.26925 11.6951 8.4097L12.4866 9.02085ZM17.9724 8.30597C19.6846 9.61478 20.0054 12.055 18.6909 13.7573L19.4824 14.3685C21.1363 12.2265 20.7312 9.15611 18.5797 7.5115L17.9724 8.30597ZM12.4484 14.638L11.2155 16.2348L12.007 16.846L13.2399 15.2492L12.4484 14.638ZM10.0058 15.9426L12.7087 18.0087L13.316 17.2142L10.6131 15.1481L10.0058 15.9426ZM12.1098 16.9185L9.51413 20.2802L10.3056 20.8914L12.9013 17.5297L12.1098 16.9185ZM8.6163 19.6L11.212 16.2383L10.4205 15.6272L7.82479 18.9889L8.6163 19.6ZM8.71994 20.3833C8.47309 20.1946 8.42763 19.8444 8.6163 19.6L7.82479 18.9889C7.29668 19.6729 7.42649 20.6533 8.11264 21.1778L8.71994 20.3833ZM9.51413 20.2802C9.3243 20.5261 8.96829 20.5732 8.71994 20.3833L8.11264 21.1778C8.79729 21.7011 9.77869 21.5738 10.3056 20.8914L9.51413 20.2802Z" fill="white"/>
+                    </svg>
+                    
+            </button>
+        </div>
+    </div>
+
+     <!-- Filter Section -->
+    <div class="border border-gray-300" style="background-color: aliceblue;" >
+        <div class="absolute flex items-center w-[302px] h-[30px] left-[49px] top-[710px]">
+            <svg class="w-[25px] h-[25px] mr-4" fill="none" stroke="currentColor" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.0238 7.14285H8.92858M6.54763 7.14285H2.9762M22.0238 19.0476H8.92858M6.54763 19.0476H2.9762M16.0714 13.0952H2.9762M22.0238 13.0952H18.4524M7.7381 4.7619C8.05384 4.7619 8.35664 4.88733 8.5799 5.11058C8.80315 5.33384 8.92858 5.63664 8.92858 5.95238V8.33333C8.92858 8.64906 8.80315 8.95187 8.5799 9.17512C8.35664 9.39838 8.05384 9.52381 7.7381 9.52381C7.42237 9.52381 7.11957 9.39838 6.89631 9.17512C6.67305 8.95187 6.54763 8.64906 6.54763 8.33333V5.95238C6.54763 5.63664 6.67305 5.33384 6.89631 5.11058C7.11957 4.88733 7.42237 4.7619 7.7381 4.7619V4.7619ZM7.7381 16.6667C8.05384 16.6667 8.35664 16.7921 8.5799 17.0153C8.80315 17.2386 8.92858 17.5414 8.92858 17.8571V20.2381C8.92858 20.5538 8.80315 20.8566 8.5799 21.0799C8.35664 21.3031 8.05384 21.4286 7.7381 21.4286C7.42237 21.4286 7.11957 21.3031 6.89631 21.0799C6.67305 20.8566 6.54763 20.5538 6.54763 20.2381V17.8571C6.54763 17.5414 6.67305 17.2386 6.89631 17.0153C7.11957 16.7921 7.42237 16.6667 7.7381 16.6667ZM17.2619 10.7143C17.5776 10.7143 17.8804 10.8397 18.1037 11.063C18.327 11.2862 18.4524 11.589 18.4524 11.9048V14.2857C18.4524 14.6014 18.327 14.9042 18.1037 15.1275C17.8804 15.3508 17.5776 15.4762 17.2619 15.4762C16.9462 15.4762 16.6434 15.3508 16.4201 15.1275C16.1969 14.9042 16.0714 14.6014 16.0714 14.2857V11.9048C16.0714 11.589 16.1969 11.2862 16.4201 11.063C16.6434 10.8397 16.9462 10.7143 17.2619 10.7143V10.7143Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h2 class="text-black text-lg font-normal mr-4 font-semibold" style="font-family: 'Poppins'; line-height: 30px;">Filter</h2>
+            <a href="#" class="ml-auto text-blue-500 text-sm underline hover:text-blue-700" style="font-family: 'Poppins';">Clear</a>
+        </div>
+        <hr class="absolute left-[26.5px] top-[757px] w-[344.5px] border border-[#E7E7E7]">
+        <div class="absolute w-[300px] h-[89px] left-[49px] top-[769px]">
+            <h2 class="text-black text-lg font-normal mb-2 font-semibold" style="font-family: 'Poppins';">Distance</h2>
+            <div class="absolute w-[42px] h-[2px] left-[2px] top-[32px] bg-[#5315E0]"></div>
+    
+            <div class="relative">
+                <div class="w-[300px] h-[44px] bg-white border border-[#D9D9D9] rounded-full flex items-center px-4">
+                    <span class="text-black text-sm" style="font-family: 'Poppins';">5 miles</span>
+                    <svg class="ml-auto w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute w-[300px] h-[584px] left-[49px] top-[875px]">
+            <h2 class="text-black text-lg font-normal mb-2 font-semibold" style="font-family: 'Poppins';">Provider or Practice name</h2>
+            <div class="absolute w-[42px] h-[2px] left-[2px] top-[32px] bg-[#5315E0]"></div>
+    
+            <div class="relative">
+                <div class="w-[300px] h-[44px] bg-white border border-[#D9D9D9] rounded-full flex items-center px-4">
+                    <span class="text-black text-sm" style="font-family: 'Poppins';">Type Here</span>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="absolute w-[300px] h-[584px] left-[49px] top-[975px]">
+            <h2 class="text-black text-lg font-normal mb-2 font-semibold" style="font-family: 'Poppins';">Certification</h2>
+            <div class="absolute w-[42px] h-[2px] left-[2px] top-[32px] bg-[#5315E0]"></div>
+    
+            <div class="relative">
+                <a href="#" class="ml-auto text-blue-500 text-sm underline hover:text-blue-700" style="font-family: 'Poppins';">Clear</a>
+            </div>
+        </div>
+        
+        <div class="absolute w-[300px] h-[584px] left-[49px] top-[1075px]">
+            <h2 class="text-black text-lg font-normal mb-2 font-semibold" style="font-family: 'Poppins';">Specialty</h2>
+            <div class="absolute w-[42px] h-[2px] left-[2px] top-[32px] bg-[#5315E0]"></div>
+            <br>
+            <div class="relative">
+           
+                <div class="flex items-center ">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Diabetes</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Paediatrics</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alzheimer's</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Hypertension</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Obesity</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Thyroid Disease</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Arthritis</label>
+                </div>
+                
+             </div>
+             
+            <div class="relative">
+                <a href="#" class="ml-auto text-blue-500 text-sm underline hover:text-blue-700" style="font-family: 'Poppins';">View All</a>
+            </div>
+        </div>
+    
+    
+        <div class="absolute w-[300px] h-[584px] left-[49px] top-[1325px]">
+            <h2 class="text-black text-lg font-normal mb-2 font-semibold" style="font-family: 'Poppins';">Visit Type</h2>
+            <div class="absolute w-[42px] h-[2px] left-[2px] top-[32px] bg-[#5315E0]"></div>
+            <br>
+            <div class="relative">
+           
+                <div class="flex items-center ">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Home</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Virtual</label>
+                </div>
+                <div class="flex items-center">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-2 focus:ring-[#5315E0] dark:focus:ring-[#5315E0] dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Office</label>
+                </div>
+                
+            </div>
+             
+        </div>
+    </div>
+
+</body>
+</html>
